@@ -1,0 +1,9 @@
+pipeline {
+    agent { label 'electronics' }
+
+    stages{
+        stage("Tools Configure"){
+            step {echo "Tools Installation pipeline" }
+        }
+    }
+}
